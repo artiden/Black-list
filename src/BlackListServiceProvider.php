@@ -14,7 +14,7 @@ class BlackListServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**
@@ -25,7 +25,7 @@ class BlackListServiceProvider extends ServiceProvider
     public function register()
     {
         App::bind('BlackList', function() {
-            return new BlackList;
+            return new Manager;
         });
     }
 }

@@ -2,10 +2,16 @@
 
 namespace Artiden\Blacklist;
 
-class Blacklist
+use Illuminate\Database\Eloquent\Model;
+
+class BlackList extends Model
 {
-    public function emailBlacklisted(string $email)
-    {
-        
-    }
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'email',
+    ];
 }
