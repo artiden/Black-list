@@ -19,9 +19,9 @@
             "providers": [
                 "Artiden\\Blacklist\\BlackListServiceProvider"
             ],
-            "aliases": [
-                "Artiden\\Blacklist\\Facade"
-            ]
+            "aliases": {
+                "BlackList": "Artiden\\Blacklist\\Facade"
+            }
         }
     }
 }
