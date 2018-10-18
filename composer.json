@@ -1,0 +1,27 @@
+{
+    "name": "artiden/black-list",
+    "description": "An emails black list package for Laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denys Reveha",
+            "email": "hmx@ukr.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Artiden\\Blacklist\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Artiden\\Blacklist\\BlackListServiceProvider"
+            ],
+            "aliases": [
+                "Artiden\\Blacklist\\Facade"
+            ]
+        }
+    }
+}
